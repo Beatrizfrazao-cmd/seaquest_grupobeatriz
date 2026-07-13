@@ -2,7 +2,7 @@
 #include "tela.h"
 
 void limpar_tela() {
-    printf("\033[2J"); // ANSI para limpar a tela toda
+    printf("\033[2J"); 
 }
 
 void mover_cursor(int x, int y) {

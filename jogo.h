@@ -6,7 +6,7 @@
 
 typedef struct {
     int x, y;
-    int direcao; // 1 = Direita, -1 = Esquerda
+    int direcao; 
     int oxigenio;
     int vidas;
     int pontos;
@@ -15,10 +15,10 @@ typedef struct {
 typedef struct {
     int x, y;
     int ativo;
-    int tipo;          // 1: Tubarão, 2: Mergulhador
-    int direcao;       // 1 = Direita, -1 = Esquerda
-    int velocidade;     //quantos frames demora pra mover um bloco
-    int contador_frame; // contador para gerenciar a velocidade individual
+    int tipo;         
+    int direcao;       
+    int velocidade;     
+    int contador_frame; 
 } Entidade;
 
 typedef struct {

@@ -13,7 +13,7 @@ int main() {
     
     HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
  
-    // animação do start
+    
     limpar_tela();
 
     SetConsoleTextAttribute(hConsole, FOREGROUND_GREEN | FOREGROUND_BLUE | FOREGROUND_INTENSITY);
@@ -71,7 +71,7 @@ int main() {
     limpar_tela();
     Sleep(300);
 
-    // inicialização e loop principal 
+    
 
     inicializar_jogo(&player, entidades, tiros); 
 
@@ -82,7 +82,7 @@ int main() {
         if (cooldown_tiro > 0) cooldown_tiro--;
         if (cooldown_y > 0) cooldown_y--;
 
-        // Movimentação Vertical
+        
         if (cooldown_y == 0) {
             if (GetAsyncKeyState('W') & 0x8000 && player.y > 0) {
                 player.y--;
@@ -94,7 +94,7 @@ int main() {
             }
         }
         
-        // Movimentação Horizontal
+       
         if (GetAsyncKeyState('A') & 0x8000 && player.x > 0) { 
             player.x--; 
             player.direcao = -1; 
@@ -118,7 +118,7 @@ int main() {
     }
 
     
-    // animção do game over, basicamente a mesma coisa do start 
+   
     limpar_tela();
     mostrar_cursor();
     
